@@ -27,9 +27,9 @@
 
 </div align="left" >
 
-## About Website Wizard
+## About Web Wizard
 
-**Website Wizard** is an innovative AI chatbot meticulously designed to enhance website interactions. Trained on user-provided links, this advanced chatbot seamlessly integrates with websites, delivering instant responses and boosting user engagement. It expedites interactions by eliminating time-consuming searches, significantly improving operational efficiency.
+**Webs Wizard** is an innovative AI chatbot meticulously designed to enhance website interactions. Trained on user-provided links, this advanced chatbot seamlessly integrates with websites, delivering instant responses and boosting user engagement. It expedites interactions by eliminating time-consuming searches, significantly improving operational efficiency.
 </br>
 
 ## Features
@@ -48,7 +48,7 @@ _WebsiteWizard aims to deliver an intuitive and effective solution for crafting,
 <!--`Link to install`
 Screenshot of landing page
 -->
-## 💡 How Website Wizard works ?
+## 💡 How Web Wizard works ?
 
 ```mermaid
 sequenceDiagram
