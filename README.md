@@ -1,6 +1,6 @@
 <div align="center">
 <a href="">
-    <img alt="comet" src="assets/webwizard.jpg" height=160 >
+
 </a>
 </div>
 </br>
