@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot on Screenshot</title>
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+        }
+        .screenshot {
+            width: 100%;
+            height: 100vh;
+            background: url('screenshot.png') no-repeat center center;
+            background-size: cover;
+        }
+        .chatbot {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 750px; /* Increased by 50% */
+            height: 800px; /* Increased by 50% */
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: height 0.3s ease; /* Smooth transition */
+        }
+        .collapsed {
+            height: 0; /* Collapse height */
+            overflow: hidden; /* Hide overflow */
+        }
+        .toggle-button {
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            background-color: #ed4545; /* Green color */
+            color: white; /* White text */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 15px; /* Padding */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transitions */
+        }
+        .toggle-button:hover {
+            background-color: #218838; /* Darker green on hover */
+            transform: scale(1.05); /* Slightly enlarge */
+        }
+        .toggle-button:active {
+            transform: scale(0.95); /* Shrink on click */
+        }
+    </style>
+</head>
+<body>
+    <div class="screenshot"></div>
+    <div class="chatbot-container">
+        <iframe id="chatbot" src="http://localhost:3000/" class="chatbot"></iframe>
+        <button class="toggle-button" onclick="toggleIframe()">Speak to Supa</button>
+    </div>
+
+    <script>
+        function toggleIframe() {
+            const iframe = document.getElementById('chatbot');
+            iframe.classList.toggle('collapsed');
+        }
+    </script>
+</body>
+</html>
